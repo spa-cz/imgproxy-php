@@ -80,7 +80,7 @@ abstract class AbstractOption implements Stringable
 
         if (is_float($value)) {
             // Remove trailing zeros for floating point values
-            return rtrim(rtrim(sprintf('%.6f', $value), '0'), '.');
+            return rtrim(rtrim(sprintf('%.6F', $value), '0'), '.');
         }
 
         return (string) $value;
